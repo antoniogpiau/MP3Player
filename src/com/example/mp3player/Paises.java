@@ -54,7 +54,7 @@ public enum Paises {
 		China,
 		Chipre,
 		Clipperton_Island,
-		Colômbia,
+		Colombia,
 		Comores,
 		Congo_Brazzaville,
 		Congo_Kinshasa,
