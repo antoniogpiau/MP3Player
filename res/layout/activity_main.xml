@@ -1,8 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
 
     <EditText
@@ -14,10 +14,35 @@
     </EditText>
 
     <Button
-        android:id="@+id/botaoNome"
+        android:id="@+id/btnIncluir"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Click Me" />
+        android:text="Incluir musica" />
+    
+    <Button
+        android:layout_marginTop="30px"
+        android:id="@+id/btnCriarAlbum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar novo album" />
+    
+   <Button
+        android:id="@+id/btnGerenciarLista"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerenciar lista personalizada" />
+   
+    <Button
+        android:id="@+id/btnBuscarMusica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar musica" />
+    
+     <Button
+        android:id="@+id/btnExibeListaMusica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Exibir lista de musica" />
     
     </LinearLayout>
 

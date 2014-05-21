@@ -1,16 +1,16 @@
 package com.example.mp3player;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
 	EditText nome;
-	Button bntNome;
+	Button btnIncluir, btnCriarAlbum, btnGerenciarLista, btnBuscarMusica, btnExibeListaMusica ;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,17 +18,21 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		nome = (EditText) this.findViewById(R.id.nome);
-		bntNome = (Button) this.findViewById(R.id.botaoNome);
+		btnIncluir = (Button) this.findViewById(R.id.btnIncluir);
+		btnCriarAlbum = (Button) this.findViewById(R.id.btnCriarAlbum);
+		btnGerenciarLista = (Button) this.findViewById(R.id.btnGerenciarLista);
+		btnBuscarMusica = (Button) this.findViewById(R.id.btnBuscarMusica);
+		btnExibeListaMusica = (Button) this.findViewById(R.id.btnExibeListaMusica);
 
-		bntNome.setOnClickListener(new View.OnClickListener() {
-
+		btnIncluir.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(getApplicationContext(),
-						nome.getText().toString(), Toast.LENGTH_SHORT).show();
-
+				startActivity(new Intent(getApplicationContext(), IncluirMusicaActivity.class));
 			}
 		});
+		
+		
+		
 
 	}
 
