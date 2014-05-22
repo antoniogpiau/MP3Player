@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O que deseja listar? " />
+
+    <RadioButton
+        android:layout_marginTop="30px"
+        android:id="@+id/rbAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Album" />
+
+    <RadioButton
+        android:id="@+id/rbArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artista" />
+
+    <RadioButton
+        android:id="@+id/rbGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero" />
+
+    <RadioButton
+        android:id="@+id/rbLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista" />
+
+    <ScrollView
+        android:id="@+id/svLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    
+   <Button
+        android:layout_marginTop="230px"
+        android:id="@+id/btnVoltar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+</LinearLayout>

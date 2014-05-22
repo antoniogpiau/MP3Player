@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txNomeMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Musica: " />
+    
+    <Spinner
+        android:id="@+id/spinnerNomeMusica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txNomeArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artista: " />
+     
+   
+    <Spinner
+        android:id="@+id/spinnerNomeArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero " />
+    
+    
+    <Spinner
+        android:id="@+id/spinnerGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />  
+        
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txDuracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duracao: " />
+    
+    
+    <Spinner
+        android:id="@+id/spinnerTempoDuracao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    
+
+</LinearLayout>

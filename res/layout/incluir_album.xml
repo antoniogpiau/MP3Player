@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="50px"
+        android:id="@+id/txNomeAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Album: " />
+   
+    <EditText
+        android:id="@+id/etNomeAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txDataAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data do album(dd/mm/aaaa): " />
+    
+    
+     <EditText
+        android:id="@+id/etDataAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txQtdeMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantide de musicas: " />
+    
+    <EditText
+        android:id="@+id/etGeneroMusica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:layout_marginTop="30px"
+        android:id="@+id/btnAddAlbum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar album" />
+    
+    
+   <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+</LinearLayout>
