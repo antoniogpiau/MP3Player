@@ -9,7 +9,6 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
-	EditText nome;
 	Button btnIncluir, btnCriarAlbum, btnGerenciarLista, btnBuscarMusica, btnExibeListaMusica ;
 
 	@Override
@@ -17,7 +16,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		nome = (EditText) this.findViewById(R.id.nome);
 		btnIncluir = (Button) this.findViewById(R.id.btnIncluir);
 		btnCriarAlbum = (Button) this.findViewById(R.id.btnCriarAlbum);
 		btnGerenciarLista = (Button) this.findViewById(R.id.btnGerenciarLista);
