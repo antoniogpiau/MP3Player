@@ -5,15 +5,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <requestFocus />
-    </EditText>
-
     <Button
+        android:layout_marginTop="70px"
         android:id="@+id/btnIncluir"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -27,18 +20,21 @@
         android:text="Criar novo album" />
     
    <Button
+       android:layout_marginTop="30px"
         android:id="@+id/btnGerenciarLista"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Gerenciar lista personalizada" />
    
     <Button
+        android:layout_marginTop="30px"
         android:id="@+id/btnBuscarMusica"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Buscar musica" />
     
      <Button
+        android:layout_marginTop="30px"
         android:id="@+id/btnExibeListaMusica"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

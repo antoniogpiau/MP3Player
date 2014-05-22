@@ -5,9 +5,83 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:layout_marginTop="50px"
+        android:id="@+id/txNomeMusica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Nome da musica: " />
+   
+    <EditText
+        android:id="@+id/etNomeMusica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txDuracaoMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duracao da musica(segundos): " />
+    
+    
+     <EditText
+        android:id="@+id/etDuracaoMusica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned" />
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txGeneroMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero da musica: " />
+    
+    <EditText
+        android:id="@+id/etGeneroMusica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:layout_marginTop="30px"
+        android:id="@+id/txNomeArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do artista: " />
+
+    <EditText
+        android:id="@+id/etNomeArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:layout_marginTop="30px"
+        android:id="@+id/btnAddMusica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar musica" />
+    
+    
+   <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
 
 </LinearLayout>
