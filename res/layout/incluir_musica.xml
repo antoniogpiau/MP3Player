@@ -5,7 +5,7 @@
     android:orientation="vertical" >
 
     <TextView
-        android:layout_marginTop="50px"
+        android:layout_marginTop="5px"
         android:id="@+id/txNomeMusica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
     </EditText>
     
     <TextView
-        android:layout_marginTop="30px"
+        android:layout_marginTop="15px"
         android:id="@+id/txDuracaoMusica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
         android:inputType="numberSigned" />
     
     <TextView
-        android:layout_marginTop="30px"
+        android:layout_marginTop="15px"
         android:id="@+id/txGeneroMusica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,11 +50,10 @@
         android:ems="10"
         android:inputType="textPersonName" >
 
-        <requestFocus />
     </EditText>
     
     <TextView
-        android:layout_marginTop="30px"
+        android:layout_marginTop="15px"
         android:id="@+id/txNomeArtista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,11 +66,26 @@
         android:ems="10"
         android:inputType="textPersonName" >
 
-        <requestFocus />
+    </EditText>
+    
+        <TextView
+        android:layout_marginTop="15px"
+        android:id="@+id/txPaisArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pais do artista: " />
+
+    <EditText
+        android:id="@+id/etPaisArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
     </EditText>
 
     <Button
-        android:layout_marginTop="30px"
+        android:layout_marginTop="15px"
         android:id="@+id/btnAddMusica"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

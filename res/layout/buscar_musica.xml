@@ -15,7 +15,7 @@
     <Spinner
         android:id="@+id/spinnerNomeMusica"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="90px" />
     
     <TextView
         android:layout_marginTop="30px"
@@ -28,7 +28,7 @@
     <Spinner
         android:id="@+id/spinnerNomeArtista"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="90px" />
     
     
     <TextView
@@ -42,7 +42,7 @@
     <Spinner
         android:id="@+id/spinnerGenero"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />  
+        android:layout_height="90px" />
         
     
     <TextView
@@ -56,7 +56,13 @@
     <Spinner
         android:id="@+id/spinnerTempoDuracao"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="90px" />
+    
+       <Button android:layout_marginTop="30px"
+        android:id="@+id/btnVoltar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
     
     
 

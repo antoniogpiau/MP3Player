@@ -27,6 +27,30 @@
         <activity
             android:name="com.example.mp3player.IncluirMusicaActivity">
         </activity>
+        
+        <activity
+            android:name="com.example.mp3player.BuscarMusicaActivity">
+        </activity>
+        
+        <activity
+            android:name="com.example.mp3player.CriarAlbumActivity">
+        </activity>
+        
+        <activity
+            android:name="com.example.mp3player.ExibirListasActivity">
+        </activity>
+        
+        <activity
+            android:name="com.example.mp3player.ListaPersonalizadaActivity">
+        </activity>
+        
+        <activity
+            android:name="com.example.mp3player.IncluirPersonalizadaActivity">
+        </activity>
+        
+        <activity
+            android:name="com.example.mp3player.RemoverPersonalizadaActivity">
+        </activity>
     </application>
 
 </manifest>

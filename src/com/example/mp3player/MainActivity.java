@@ -1,15 +1,17 @@
 package com.example.mp3player;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
 	Button btnIncluir, btnCriarAlbum, btnGerenciarLista, btnBuscarMusica, btnExibeListaMusica ;
+	
+	public static Repositorio repositorio = new Repositorio();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,33 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+		btnCriarAlbum.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(), CriarAlbumActivity.class));
+			}
+		});
 		
+		btnGerenciarLista.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(), ListaPersonalizadaActivity.class));
+			}
+		});
+		
+		btnBuscarMusica.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(), BuscarMusicaActivity.class));
+			}
+		});
+		
+		btnExibeListaMusica.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(), ExibirListasActivity.class));
+			}
+		});
 		
 
 	}
