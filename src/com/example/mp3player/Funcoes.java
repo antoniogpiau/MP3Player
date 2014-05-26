@@ -4,45 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
+import android.util.Log;
+
 public class Funcoes {
-	private static ArrayList<Musica> JuntarMusicas(Repositorio repositorio) throws Exception{
-		int i = 0, j = 0;
-		ArrayList<Musica> musicas = new ArrayList<Musica> ();
-		Album a;
-		
-		while (i < 100)
-		{
-			if (repositorio.localizarMusica(i) == null)
-				break;
-	
-			musicas.add(repositorio.localizarMusica(i));
-			i++;
-		}
-		
-		i = 0;
-		
-		while (i < 50)
-		{	
-			if (repositorio.localizarAlbum(i) == null)
-				break;
-			
-			a = repositorio.localizarAlbum(i);
-			
-			while (j < 30)
-			{
-				if (a.localizarMusica(j) == null)
-					break;
-				
-				musicas.add(a.localizarMusica(j));
-		
-				j++;
-			}
-			
-			i++;
-		}
-		
-		return musicas;
-	}
+
 	
 	private static void ListagemAlbum(Repositorio repositorio, String nome) throws Exception{
 		int k = 0, j = 0;
@@ -214,7 +179,7 @@ public class Funcoes {
 		String resposta, retorno = "";
 		BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 		
-		ArrayList<Musica> musicas = JuntarMusicas(repositorio);
+		ArrayList<Musica> musicas = JuntarMusicas();
 		
 		
 		System.out.println();
@@ -316,7 +281,7 @@ public class Funcoes {
 		BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 		int i = 0, index, opcao = 1;
 		
-		ArrayList<Musica> musicas = JuntarMusicas(repositorio);
+		ArrayList<Musica> musicas = JuntarMusicas();
 		
 		
 		while (opcao != 0)
@@ -451,13 +416,62 @@ public class Funcoes {
 	}*/
 
 	
+	public static ArrayList<Musica> JuntarMusicas() throws Exception{
+		int i = 0, j = 0;
+		ArrayList<Musica> musicas = new ArrayList<Musica> ();
+		Album a;
+		
+		while (i < 100)
+		{
+			if (MainActivity.repositorio.localizarMusica(i) == null)
+				break;
 	
+			musicas.add(MainActivity.repositorio.localizarMusica(i));
+			i++;
+		}
+		
+		i = 0;
+		
+		while (i < 50)
+		{	
+			j = 0;
+			
+			if (MainActivity.repositorio.localizarAlbum(i) == null)
+				break;
+			
+			a = MainActivity.repositorio.localizarAlbum(i);
+			
+			while (j < 30)
+			{
+				if (a.localizarMusica(j) == null)
+					break;
+				
+				musicas.add(a.localizarMusica(j));
+		
+				j++;
+			}
+			
+			i++;
+		}
+		
+		return musicas;
+	}
 	
-	
-	
-	
-	
-	
+	public static void IncluirMusica(String nomeMusica, int duracaoMusica, String generoMusica, String nomeArtista, String paisArtista, Album album) throws Exception {
+
+		if ((nomeArtista.equals("")) || (nomeArtista.equals("Desconhecido")))
+			album.adicionarMusica(new Musica(nomeMusica, generoMusica, duracaoMusica));
+		else {
+
+			if (MainActivity.repositorio.localizarArtista(nomeArtista) == null) {
+				Artista a = new Artista(nomeArtista, paisArtista);
+				MainActivity.repositorio.adicionarArtista(a);
+			}
+			
+			album.adicionarMusica(new Musica(nomeMusica, MainActivity.repositorio.localizarArtista(nomeArtista), generoMusica, duracaoMusica));
+		}
+		
+	}	
 	
 	public static void IncluirMusica(String nomeMusica, int duracaoMusica, String generoMusica, String nomeArtista, String paisArtista) throws Exception {
 
@@ -467,7 +481,6 @@ public class Funcoes {
 
 			if (MainActivity.repositorio.localizarArtista(nomeArtista) == null) {
 				Artista a = new Artista(nomeArtista, paisArtista);
-
 				MainActivity.repositorio.adicionarArtista(a);
 			}
 

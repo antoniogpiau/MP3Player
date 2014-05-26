@@ -25,28 +25,27 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08002a;
+        public static final int action_settings=0x7f080029;
         public static final int btnAddAlbum=0x7f08001b;
         public static final int btnAddLista=0x7f080007;
-        public static final int btnAddMusica=0x7f080027;
-        public static final int btnAddMusicaAlbum=0x7f08001c;
-        public static final int btnAddMusicaLista=0x7f08001d;
+        public static final int btnAddMusica=0x7f080026;
+        public static final int btnAddMusicaLista=0x7f08001c;
         public static final int btnBuscarMusica=0x7f080004;
         public static final int btnCriarAlbum=0x7f080002;
         public static final int btnExibeListaMusica=0x7f080005;
         public static final int btnGerenciarLista=0x7f080003;
         public static final int btnIncluir=0x7f080001;
-        public static final int btnRmDaLista=0x7f080029;
-        public static final int btnRmMusicaLista=0x7f08001e;
+        public static final int btnRmDaLista=0x7f080028;
+        public static final int btnRmMusicaLista=0x7f08001d;
         public static final int btnVoltar=0x7f080008;
         public static final int container=0x7f080000;
         public static final int etDataAlbum=0x7f08001a;
-        public static final int etDuracaoMusica=0x7f080021;
-        public static final int etGeneroMusica=0x7f080023;
+        public static final int etDuracaoMusica=0x7f080020;
+        public static final int etGeneroMusica=0x7f080022;
         public static final int etNomeAlbum=0x7f080018;
-        public static final int etNomeArtista=0x7f080024;
-        public static final int etNomeMusica=0x7f08001f;
-        public static final int etPaisArtista=0x7f080026;
+        public static final int etNomeArtista=0x7f080023;
+        public static final int etNomeMusica=0x7f08001e;
+        public static final int etPaisArtista=0x7f080025;
         public static final int rbAlbum=0x7f080012;
         public static final int rbArtista=0x7f080013;
         public static final int rbGenero=0x7f080014;
@@ -55,19 +54,19 @@ public final class R {
         public static final int spinnerGenero=0x7f08000e;
         public static final int spinnerNomeArtista=0x7f08000c;
         public static final int spinnerNomeMusica=0x7f08000a;
-        public static final int spinnerRmMusica=0x7f080028;
+        public static final int spinnerRmMusica=0x7f080027;
         public static final int spinnerTempoDuracao=0x7f080010;
         public static final int svLista=0x7f080016;
         public static final int txDataAlbum=0x7f080019;
         public static final int txDuracao=0x7f08000f;
-        public static final int txDuracaoMusica=0x7f080020;
+        public static final int txDuracaoMusica=0x7f08001f;
         public static final int txGenero=0x7f08000d;
-        public static final int txGeneroMusica=0x7f080022;
+        public static final int txGeneroMusica=0x7f080021;
         public static final int txLista=0x7f080011;
         public static final int txNomeAlbum=0x7f080017;
         public static final int txNomeArtista=0x7f08000b;
         public static final int txNomeMusica=0x7f080009;
-        public static final int txPaisArtista=0x7f080025;
+        public static final int txPaisArtista=0x7f080024;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

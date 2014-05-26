@@ -100,6 +100,10 @@ public class Repositorio {
 		
 	}
 	
+	public Artista localizarArtista(int i)throws Exception{
+		return artistas[i];
+	}
+	
 	
 	public Album localizarAlbum(String n){
 

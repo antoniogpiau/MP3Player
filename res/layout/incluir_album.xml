@@ -43,13 +43,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Adicionar Album" />
-    
-        <Button
-        android:layout_marginTop="30px"
-        android:id="@+id/btnAddMusicaAlbum"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Adicionar Musicas em um Album" />
+
     
     
    <Button android:layout_marginTop="30px"
