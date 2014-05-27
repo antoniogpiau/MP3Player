@@ -58,7 +58,7 @@ public class ExibirListasActivity extends Activity {
 					
 					
 					if (i > 0)
-						musicasPersonalizadas +=  "\n" + MainActivity.repositorio.localizarMusicaPersionalizada(i).getNome();
+						musicasPersonalizadas +=  "\n" + MainActivity.repositorio.localizarMusicaPersionalizada(i).toString();
 					else
 						musicasPersonalizadas += MainActivity.repositorio.localizarMusicaPersionalizada(i).toString();
 
