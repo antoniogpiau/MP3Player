@@ -12,52 +12,36 @@
         android:layout_height="wrap_content"
         android:text="O que deseja listar? " />
     
-<RadioGroup
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    
-    <RadioButton
-        android:layout_marginTop="30px"
-        android:id="@+id/rbAlbum"
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_marginTop="50px"
+        android:id="@+id/btnExibirAlbum"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Album" />
-
-    <RadioButton
-        android:id="@+id/rbArtista"
-        android:layout_width="wrap_content"
+    
+        <Button
+        android:layout_marginTop="50px"
+        android:id="@+id/btnExibirArtista"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Artista" />
-
-    <RadioButton
-        android:id="@+id/rbGenero"
-        android:layout_width="wrap_content"
+        
+            <Button
+        android:layout_marginTop="50px"
+        android:id="@+id/btnExibirGenero"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Genero" />
-
-    <RadioButton
-        android:id="@+id/rbLista"
-        android:layout_width="wrap_content"
+            
+                <Button
+        android:layout_marginTop="50px"
+        android:id="@+id/btnExibirPersonalizada"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Lista" />
-    
-    </RadioGroup>
-
-    <ScrollView
-        android:id="@+id/svLista"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-        </LinearLayout>
-    </ScrollView>
+        android:text="Lista Personalizada" />
     
    <Button
-        android:layout_marginTop="230px"
+        android:layout_marginTop="50px"
         android:id="@+id/btnVoltar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

@@ -63,7 +63,7 @@ public class MP3player {
 			System.out.print("Nome do Album: ");
 			resposta = entrada.readLine();
 			
-			Album a = repositorio.localizarAlbum(resposta);;
+			Album a = repositorio.localizarAlbum(resposta);
 
 			
 			

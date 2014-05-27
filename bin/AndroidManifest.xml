@@ -51,6 +51,20 @@
         <activity
             android:name="com.example.mp3player.RemoverPersonalizadaActivity">
         </activity>
+        
+        <activity
+            android:name="com.example.mp3player.ExibirAlbumActivity">
+        </activity>
+        
+        <activity
+            android:name="com.example.mp3player.ExibirArtistaActivity">
+        </activity>
+        
+        <activity
+            android:name="com.example.mp3player.ExibirGeneroActivity">
+        </activity>
+
+        
     </application>
 
 </manifest>

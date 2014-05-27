@@ -3,9 +3,9 @@ package com.example.mp3player;
 public class Repositorio {
 	
 	private Musica[] musicas;
-	private Artista[] artistas;
+	public Artista[] artistas;
 	private Album[] albuns;
-	public Musica[] custom;
+	private Musica[] custom;
 	
 	public Repositorio(){
 		musicas = new Musica[100];

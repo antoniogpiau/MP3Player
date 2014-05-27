@@ -9,14 +9,14 @@
         android:id="@+id/btnAddMusicaLista"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Adicionar musica a lista" />
+        android:text="Adicionar musica na lista" />
     
     <Button
         android:layout_marginTop="50px"
         android:id="@+id/btnRmMusicaLista"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Remover musica a lista" />
+        android:text="Remover musica da lista" />
     
     
    <Button

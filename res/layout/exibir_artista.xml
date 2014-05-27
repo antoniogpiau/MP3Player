@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:id="@+id/txNomeArtistaListagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Artista:" />
+   
+    <EditText
+        android:layout_marginTop="20px"
+        android:id="@+id/etNomeArtistaListagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:layout_marginTop="40px"
+        android:id="@+id/btnListarArtista"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar" />
+    
+    
+   <Button
+       android:layout_marginTop="20px"
+        android:id="@+id/btnVoltar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+</LinearLayout>
